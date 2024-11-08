@@ -1,0 +1,109 @@
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #343a40 !important;
+        padding: 10px;
+    }
+}
+
+.home-slider {
+    background-position: 50% 0px;
+    opacity: 1;
+    padding: 140px 0px 100px 0px;
+    visibility: visible;
+    background-position: center!important;
+}
+
+.home-name {
+    font-family: Poppins;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    line-height: 96px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 96px;
+    transform-origin: 50% 50%;
+    text-transform: uppercase;
+}
+
+.home-opening {
+    font-family: Poppins;
+    color: rgb(197, 171, 107);
+    line-height: 38px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.home-opening-time {
+    font-family: Roboto;
+    color: rgb(255, 255, 255);
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+/* #bg-img-home-slider {
+    background-position: 50% 0px;
+    opacity: 1;
+    padding-top: 70px;
+    visibility: visible;
+    position: absolute;
+    display: block;
+    pointer-events: auto;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    visibility: visible;
+    perspective: 601px;
+} */
+
+.page-title .wf-wrap-home {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 0 50px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    min-height: 100%;
+}
+
+.home-welcome {
+    font-family: "Great Vibes", cursive;
+    color: #c5ab6b;
+    line-height: 60px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 88px;
+}
+
+
+.btn-home-slider {
+    display: inline-block;
+    padding: 10px 25px;
+    color: white; /* Màu chữ */
+    background-color: #c5ab6b; /* Nền nút */
+    border: 2px solid #c5ab6b; /* Viền của nút */
+    text-align: center;
+    text-decoration: none; /* Xóa gạch chân */
+    border-radius: 50px; /* Bo góc */
+	font-weight: 800;
+    transition: background-color 0.3s, border-color 0.3s; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.btn-home-slider:hover {
+    background-color: white; /* Nền khi hover */
+    border-color: white; /* Viền khi hover */
+	text-decoration: none;
+	color: black;
+	font-weight: 800;
+}

@@ -1,0 +1,128 @@
+
+.page-title .wf-wrap {
+    min-height: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.page-title .wf-wrap:after {
+    border-bottom: 1px solid rgba(204, 204, 204, .5)
+}
+
+.page-title.solid-bg {
+    background-color: #131313
+}
+
+.page-title.solid-bg.bg-img-enabled {
+    background-image: url("../images/slide.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover
+}
+
+.page-title.overlay-bg:after {
+    background: rgba(0, 0, 0, .5)
+}
+
+.page-title.gradient-bg {
+    background: #131313
+}
+
+.page-title.title-outline-decoration {
+    border-bottom: 1px solid transparent
+}
+
+.page-title>.wf-wrap,
+#fancy-header>.wf-wrap {
+    width: 1250px
+}
+
+.page-title h1,
+.page-title h1 *,
+.page-title h1 a:hover,
+#page .page-title .entry-title {
+    font: normal 500 50px/60px "Poppins", Helvetica, Arial, Verdana, sans-serif;
+    color: #fff;
+    text-transform: none
+}
+
+.page-title .breadcrumbs li:before,
+.page-title .breadcrumbs li:before {
+    color: rgba(135, 135, 135, .35)
+}
+
+.page-title.breadcrumbs-bg .breadcrumbs {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 0;
+    border: 0 solid rgba(255, 255, 255, .5)
+}
+
+.page-title .breadcrumbs {
+    padding: 0;
+    margin: 5px 0 0
+}
+
+.page-title .breadcrumbs,
+.page-title .breadcrumbs a {
+    color: #fff;
+    font: normal 13px/23px "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+    text-transform: none
+}
+
+.page-title .breadcrumbs li:before,
+.page-title .breadcrumbs li:before {
+    color: rgba(255, 255, 255, .5)
+}
+
+
+.page-title {
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex
+}
+
+.fancy-title-head,
+.page-title-head {
+    max-width: 100%
+}
+
+.page-title.overlay-bg {
+    position: relative
+}
+
+.page-title.overlay-bg .wf-wrap {
+    position: relative;
+    z-index: 1
+}
+
+.page-title.overlay-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: ""
+}
+
+.page-title .wf-wrap {
+    position: relative
+}
+
+.page-title .wf-wrap:after {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    content: ""
+}
+
+.page-title.disabled-bg .wf-wrap:after,
+.page-title.full-width-line .wf-wrap:after,
+.page-title.gradient-bg .wf-wrap:after,
+.page-title.solid-bg .wf-wrap:after,
+.page-title.transparent-bg .wf-wrap:after {
+    display: none
+}
+
+.title-center .hr-breadcrumbs,.title-center h1 {
+    text-align: center
+}

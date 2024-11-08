@@ -1,0 +1,399 @@
+/*
+xám nền: #f4f4f4
+vàng: #c5ab6b
+body text: #878787*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@media (min-width: 768px) {
+    .img-team {
+        padding-right: 20px
+    }
+}
+
+.bg-secondary {
+    background-color: #F4F4F4 !important;
+}
+
+/*----------Home----------*/
+.height-100 {
+    width: auto;
+    /* Chiều rộng tự động */
+    height: 100%;
+    /* Chiều cao chiếm toàn bộ chiều cao của cột */
+    object-fit: cover;
+    /* Đảm bảo ảnh không bị méo, cắt bớt ảnh nếu cần */
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    /* Màu chữ */
+    background-color: #c5ab6b;
+    /* Nền nút */
+    border: 2px solid #c5ab6b;
+    /* Viền của nút */
+    text-align: center;
+    text-decoration: none;
+    /* Xóa gạch chân */
+    border-radius: 50px;
+    /* Bo góc */
+    font-weight: 800;
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Hiệu ứng chuyển màu mượt mà */
+}
+
+.btn-home:hover {
+    background-color: #8c794A;
+    /* Nền khi hover */
+    border-color: #8c794A;
+    /* Viền khi hover */
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+/*----------STARTERS----------*/
+#starters,
+#home-events {
+    background: url("../images/bg-menu.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#starters::before,
+#home-events::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#starters .content,
+#home-events .content {
+    position: relative;
+    z-index: 2;
+    /* Đảm bảo chữ nằm trên lớp phủ */
+}
+
+#starters .sub-heading,
+#starters .sub-heading-2,
+#home-events .sub-heading {
+    color: #fff
+}
+
+#starters .menu h4 span:first-child {
+    color: #fff
+}
+
+#starters .dashed-line {
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .col-12:nth-of-type(2) .dashed-line:first-of-type {
+        display: none;
+        /* Ẩn đường gạch đầu tiên của cột thứ 2 trong #starters trên màn hình nhỏ */
+    }
+}
+
+@media (min-width: 768px) {
+    .col-12:nth-of-type(2) .dashed-line:first-of-type {
+        display: block;
+        /* Đảm bảo rằng đường gạch đầu tiên vẫn hiển thị trên màn hình lớn */
+    }
+}
+
+/*----------MENU----------*/
+#offer .sub-heading {
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+#lunch .sub-heading {
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.img-menu {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh không bị méo và bao phủ toàn bộ */
+}
+
+.menu h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Chỉnh giá */
+.menu h4 span:last-child {
+    font-weight: bold;
+    color: #c5ab6b;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Chỉnh tên món */
+.menu h4 span:first-child {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.menu p {
+    text-align: left;
+    max-width: 65%;
+    word-wrap: break-word;
+}
+
+.dashed-line {
+    width: 100%;
+    /* Chiều dài của đường gạch */
+    height: 1px;
+    /* Chiều cao của đường gạch */
+    border-top: 1px dashed #CDCDCD;
+    /* Đường gạch đứt khúc, màu xám */
+    margin: 20px 0;
+    /* Khoảng cách trên và dưới */
+}
+
+/*=================*=================*/
+:root {
+    --gold-color: #c5ab6b;
+    /* Màu vàng */
+    --gray-color: #CDCDCD;
+    /* Màu xám */
+}
+
+/* Căn chỉnh tất cả các thành phần nằm ngang */
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Đảm bảo rằng container đủ rộng để chứa các đường kẻ */
+}
+
+/* Định nghĩa cho các đường kẻ */
+.line {
+    height: 1px;
+    background-color: transparent;
+    width: 50px;
+    margin: 0 10px;
+    /* Khoảng cách giữa đường kẻ và biểu tượng */
+    position: relative;
+}
+
+/* Thêm pseudo-elements để tạo hai đường song song */
+.line:before,
+.line:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: var(--gray-color);
+    /* Màu cho đường kẻ */
+    width: 100%;
+    /* Chiều dài của đường kẻ con */
+    left: 0;
+}
+
+/* Căn giữa pseudo-elements theo chiều dọc */
+.line:before {
+    top: -1px;
+}
+
+.line:after {
+    top: 1px;
+}
+
+.line.gold:before,
+.line.gold:after {
+    background-color: var(--gold-color);
+    /* Màu vàng cho đường kẻ */
+}
+
+.line-symbol {
+    font-size: 16px;
+    color: #CDCDCD;
+    margin: 0 5px;
+}
+
+/*=================*=================*/
+
+/*-------------------------------------TAB ABOUT-------------------------------------*/
+.small-img {
+    /* height: calc(50% - 10px); /* Đảm bảo chiều cao cho hình ảnh nhỏ */
+    width: auto;
+    height: 100%;
+    /* Đặt chiều cao tự động cho hình ảnh lớn */
+}
+
+.large-image {
+    height: 100%;
+    /* Đặt chiều cao tự động cho hình ảnh lớn */
+    width: auto;
+    /* Đặt chiều rộng bằng 100% của cột */
+}
+
+/*-----TEAM-----*/
+.img-team {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh không bị méo và bao phủ toàn bộ */
+}
+
+.team-name {
+    font-family: 'Poppins';
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left
+}
+
+.team-title {
+    font-family: 'Poppins';
+    color: #c5ab6b;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left
+}
+
+.mini-widgets .nav-icon i {
+    color: white;
+}
+
+#team h4 {
+    color: #000
+}
+
+/* .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+.custom-row {
+    width: 80%;
+    /* Đặt độ rộng là 80% */
+    margin: 0 auto;
+    /* Căn giữa hàng */
+}
+
+/*-----END-TEAM------*/
+
+
+
+/*-----TESTIMONIAL-----*/
+#testimonial .carousel-item {
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+#testimonial.carousel-indicators {
+    position: absolute;
+    bottom: -30px;
+    /* Đưa chỉ báo xuống dưới */
+    left: 0;
+    right: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+    margin-left: auto;
+    /* Căn giữa chỉ báo */
+    margin-right: auto;
+    /* Căn giữa chỉ báo */
+}
+
+#testimonial.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    /* Kích thước chấm */
+    height: 10px;
+    /* Kích thước chấm */
+    margin-right: 10px;
+    margin-left: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #333;
+    /* Màu nền cho chỉ báo */
+    background-clip: padding-box;
+    border-radius: 50%;
+    /* Hình tròn cho chỉ báo */
+    opacity: .5;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    /* Canh giữa theo chiều dọc */
+    transform: translateY(-50%);
+    /* Dịch chuyển lên 50% chiều cao để canh giữa */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    /* Chiều rộng của hình vuông */
+    height: 50px;
+    /* Chiều cao của hình vuông */
+    background-color: #c5ab6b;
+    /* Nền màu vàng */
+    border-radius: 0;
+    /* Loại bỏ bo góc để tạo hình vuông */
+    color: #fff;
+    text-align: center;
+    opacity: 0.8;
+    transition: opacity 0.15s ease;
+}
+
+.carousel-inner {
+    margin-bottom: 70px;
+    /* Thêm margin phía dưới */
+}
+
+#testimonial.carousel-inner p {
+    font-size: 18px;
+    /*kích thước nhận xét*/
+}
+
+#testimonial h3 {
+    font-weight: 800;
+    font-size: 18px;
+    color: #c5ab6b;
+    margin-top: 16px;
+}
+
+#testimonial h4 {
+    font-weight: bold;
+    font-size: 15px;
+    color: #878787;
+    text-align: center
+}
